@@ -1,17 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react"
+import ReactDOM from "react-dom"
+import "./css/App.css"
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import Header from "./components/Header"
+// import { MyForm1, MyForm2 } from "./components/MyForm"
+// import MemeGenerator from "./components/MemeGenerator"
+// import AppLayout from "./views/AppLayout"
+import HookPractice from "./components/HookPractice"
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(<HookPractice />, document.getElementById("root"))
+
+// ReactDOM.render(<Header favcol="yellow" />, document.getElementById("root"))
